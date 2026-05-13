@@ -150,7 +150,7 @@ Built using:
 ---
 
 ## Folder Structure
-
+```text
 final/
 │
 ├── main/
@@ -176,7 +176,7 @@ final/
 │   └── usable_faces.csv
 │
 └── README.md
-
+```
 
 ---
 
