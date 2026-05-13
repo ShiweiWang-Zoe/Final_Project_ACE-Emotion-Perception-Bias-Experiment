@@ -1,0 +1,4 @@
+participant,trial_num,image,identity,expression,correct_valence,response,correct,rt
+01,1,CFD-WF-019-015-A.jpg,WF-019,A,negative,neutral,False,3.6006488000275567
+01,2,CFD-BF-029-031-N.jpg,BF-029,N,neutral,negative,False,0.9228706000139937
+01,3,CFD-WF-019-032-HC.jpg,WF-019,HC,positive,positive,True,0.594716600026004
