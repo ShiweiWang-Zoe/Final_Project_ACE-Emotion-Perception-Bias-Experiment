@@ -1,10 +1,13 @@
 # Final_Project_ACE-Emotion-Perception-Bias-Experiment
-This repository contains materials to run the ACE and Emotion Perception Bias Experiment that captures emotion perception to facial expressions. This experiment is the final project for a Teachers College course CCPX5199 Programming for Psychologists.
+This repository contains materials for the ACE and Emotion Perception Bias Experiment, a PsychoPy-based task examining emotion perception from facial expressions. This experiment is the final project for a Teachers College course CCPX5199 Programming for Psychologists.
 
-The following are available to download:
-1.	The ACE and Emotion Perception Bias Experiment Manual (including instructions for running the task)
-2.	Python scripts to run the task
-3.	Task stimuli
+This repository includes:
+
+- PsychoPy experiment scripts
+- preprocessing scripts
+- stimulus materials
+- trial definition files
+- project documentation
 
 ## Project introduction
 This project is a PsychoPy-based behavioral experiment prototype examining emotional face perception.
@@ -89,14 +92,15 @@ Participants complete the following sequence:
 5. Main experimental trials (without feedback) 
 6. End screen
 
+### Practice Trials
 
-During practice trials:
 Three separate practice images are included to familiarize participants with the response mapping before the formal experiment begins.
 
 Practice trials provide immediate feedback on response accuracy.
 
 Practice trial data are not saved in the main experimental dataset.
 
+### Formal Trials
 
 During each formal trial:
 
@@ -151,44 +155,41 @@ Built using:
 
 ## Folder Structure
 ```text
-final/
+Final_Project_ACE-Emotion-Perception-Bias-Experiment/
 │
-├── main/
-│   ├── data/
-│   ├── stimuli/
-│   ├── practice/
-│   │   ├── practice_stimuli/
-│   │   └── practice_trials.csv
-│   ├── emotion_task_main.py
-│   └── trials_main.csv
-│
-├── test/
-│   ├── data_test/
-│   ├── stimuli_test/
-│   ├── emotion_task_test.py
-│   └── trials_test.csv
-│
+├── data/
+├── stimuli/
+├── practice/
+│   ├── practice_stimuli/
+│   └── practice_trials.csv
 ├── prep/
 │   ├── all_candidate_faces.csv
 │   ├── select_identities.py
 │   ├── select_identity.py
 │   ├── selected_identities.csv
 │   └── usable_faces.csv
-│
+├── test/
+│   ├── data_test/
+│   ├── stimuli_test/
+│   ├── emotion_task_test.py
+│   └── trials_test.csv
+├── emotion_task_main.py
+├── trials_main.csv
 └── README.md
 ```
 
 ---
 ## Repository Components
 
-- **main/**  
-  Contains the final experimental task used for the full implementation, including the main stimulus set, practice trials, and data output folder.
+- **emotion_task_main.py, stimuli/, practice/, data/, and trials_main.csv**  
+  Contain the final experimental implementation, including the main task script, stimulus set, practice trials, trial definitions, and experimental output folder.
 
 - **test/**  
   Contains a simplified prototype version of the experiment used for debugging and testing PsychoPy functionality before building the final implementation.
 
 - **prep/**  
-  Contains preprocessing scripts used to select eligible stimuli and generate trial files from the Chicago Face Database.
+  Contains preprocessing scripts and selection files used to identify eligible Chicago Face Database stimuli and generate experimental trial materials.
+
 ---
 
 ## How to Run
@@ -197,19 +198,19 @@ final/
 
 From the `prep/` folder, run:
 
+```bash
 python select_identities.py
+```
 
-This script selects eligible facial stimuli from the Chicago Face Database and generates the required trial CSV files for the experiment.
+This script selects eligible facial stimuli from the Chicago Face Database and generates the required trial CSV files.
 
 ### Step 2: Start the experiment
 
-Navigate to:
+From the repository root, run:
 
-main/
-
-Run:
-
-python emotion_task.py
+```bash
+python emotion_task_main.py
+```
 
 Participants will be prompted to enter:
 
@@ -222,14 +223,17 @@ Participants will be prompted to enter:
 
 Experimental data are automatically saved in:
 
-main/data/
+```text
+data/
+```
+
 ---
 
 ## Output Variables
 
 Saved data include:
 
-- Participant_id
+- Participant ID
 - Age
 - Gender
 - Ethnicity
@@ -246,6 +250,7 @@ Saved data include:
 
 Potential future extensions:
 
+- include a more racially diverse stimulus set (the current implementation includes only Black and White identities)
 - integrate ACE questionnaire directly into the task
 - randomize response key mapping
 - randomize trial order per participant
