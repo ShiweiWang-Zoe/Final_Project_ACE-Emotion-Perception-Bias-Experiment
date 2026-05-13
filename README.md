@@ -245,6 +245,8 @@ Saved data include:
 - Reaction time
 
 
+Here is an example of the saved data file for each participant:
+
 <img width="1946" height="890" alt="image" src="https://github.com/user-attachments/assets/d4fe62d9-61cc-488e-84d4-65b4646a3632" />
 
 ---
