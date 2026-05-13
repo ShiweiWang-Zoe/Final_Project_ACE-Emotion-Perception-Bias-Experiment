@@ -179,6 +179,17 @@ final/
 ```
 
 ---
+## Repository Components
+
+- **main/**  
+  Contains the final experimental task used for the full implementation, including the main stimulus set, practice trials, and data output folder.
+
+- **test/**  
+  Contains a simplified prototype version of the experiment used for debugging and testing PsychoPy functionality before building the final implementation.
+
+- **prep/**  
+  Contains preprocessing scripts used to select eligible stimuli and generate trial files from the Chicago Face Database.
+---
 
 ## How to Run
 
