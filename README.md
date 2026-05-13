@@ -244,6 +244,9 @@ Saved data include:
 - Accuracy
 - Reaction time
 
+
+<img width="1946" height="890" alt="image" src="https://github.com/user-attachments/assets/d4fe62d9-61cc-488e-84d4-65b4646a3632" />
+
 ---
 
 ## Future Improvements
